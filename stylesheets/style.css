@@ -6,6 +6,7 @@
   --footer-bg: #2464c9;
   --link-color: #2464c9;
   --heading-color: #1a1a1a;
+  --box-bg-color: rgb(239, 239, 239);
 }
 
 [data-theme="dark"] {
@@ -15,12 +16,13 @@
   --footer-bg: #1a1a1a;
   --link-color: #66a3ff;
   --heading-color: #ffffff;
+  --box-bg-color: #1e1e1e;
 }
 
 html, body {
   margin: 0;
   padding: 0;
-  min-height: 100dvh;
+  min-height: 100%;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--bg-color);
@@ -30,7 +32,7 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100dvh;
+  height: 100dvh;
 }
 
 main {

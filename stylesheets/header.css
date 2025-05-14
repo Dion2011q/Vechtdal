@@ -22,17 +22,25 @@ header {
   margin: 0;
 }
 
+#headertitle {
+    letter-spacing: 2px;
+}
+
 .headertext {
   color: white;
   padding: 20px;
-  text-decoration: none;
   text-align: center;
   height: 20px;
   margin: 0;
 }
 
+header a {
+  color: white;
+  text-decoration: none;
+}
+
 .headertext:hover {
-  background-color: #2450c9;
+  color: lightgrey;
 }
 
 .hamburger {

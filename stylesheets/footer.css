@@ -2,12 +2,10 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
   background-color: #2464c9;
   color: #fff;
   flex-direction: row;
   width: 100%;
-  height: 40px;
 }
 
 .navbarfooter {
@@ -19,20 +17,19 @@ footer {
   color: white;
 }
 
-
-.navbarfooter li {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
+footer a {
+  color: white;
+  text-decoration: none;
 }
+
 .footertext {
   color: white;
-  padding: 20px;
+  padding-right: 16px;
   text-decoration: none;
 }
 
 .footertext:hover {
-  color: #00bfff;
+  color: lightgrey;
 }
 
 
