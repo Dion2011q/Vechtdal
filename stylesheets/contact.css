@@ -1,10 +1,3 @@
-  main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-    font-family: sans-serif;
-  }
-
   .contact-intro {
     text-align: center;
     margin-bottom: 2rem;
@@ -24,8 +17,7 @@
     font-weight: 600;
   }
 
-  input,
-  textarea {
+  input, textarea {
     width: 100%;
     padding: 0.75rem;
     border: 1px solid #ccc;
