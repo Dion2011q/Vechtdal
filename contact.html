@@ -12,9 +12,39 @@
 
 <body>
 <div id="header-container"></div> <!-- Hier komt de header -->
-  <main>
-  <h1>kaas</h1>
+<main>
+  <section class="contact-intro">
+    <h1>Neem contact op</h1>
+    <p>Heb je vragen of wil je een afspraak maken? Vul het formulier in of neem direct contact op.</p>
+  </section>
 
+  <section class="contact-form">
+    <form action="verwerk-contact.php" method="POST">
+      <div class="form-group">
+        <label for="naam">Naam</label>
+        <input type="text" id="naam" name="naam" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mailadres</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="bericht">Bericht</label>
+        <textarea id="bericht" name="bericht" rows="5" required></textarea>
+      </div>
+
+      <button type="submit">Verzenden</button>
+    </form>
+  </section>
+
+  <section class="contact-info">
+    <h2>Contactgegevens</h2>
+    <p><strong>Telefoon:</strong> 06-12345678</p>
+    <p><strong>E-mail:</strong> info@voorbeeld.nl</p>
+    <p><strong>Adres:</strong> Dorpsstraat 12, 1234 AB Plaatsnaam</p>
+  </section>
   </main>
   <div id="footer-container"></div> <!-- Hier komt de footer -->
 </body>
