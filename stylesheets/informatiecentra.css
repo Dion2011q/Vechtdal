@@ -5,6 +5,8 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .info-container {
