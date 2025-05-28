@@ -12,7 +12,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  max-width: 100vh;
+  
   margin: 20px auto;
 }
 
