@@ -10,13 +10,12 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  max-width: 1200px;
+  max-width: 100vh;
   margin: 20px auto;
 }
 
 .info-box {
   flex: 1 1 300px;
-  margin: 15px;
   padding: 15px;
   border-radius: 8px;
   background-color: var(--box-bg-color);
