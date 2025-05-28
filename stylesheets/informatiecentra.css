@@ -4,9 +4,6 @@ main {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 20px;
-  box-sizing: border-box;
-  width: 100%;
 }
 
 .info-container {
@@ -15,6 +12,9 @@ main {
   justify-content: center;
   gap: 20px;
   margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .info-box {
