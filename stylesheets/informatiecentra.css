@@ -18,7 +18,6 @@ main {
 
 .info-box {
   flex: 1 1 300px;
-  margin: 15px;
   padding: 15px;
   border-radius: 8px;
   background-color: var(--box-bg-color);
