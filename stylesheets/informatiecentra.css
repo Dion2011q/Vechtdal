@@ -12,7 +12,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  max-width: 1200px;
+  max-width: 100vh;
   margin: 20px auto;
 }
 
@@ -20,6 +20,7 @@ main {
   flex: 1 1 300px;
   padding: 15px;
   border-radius: 8px;
+  max-width: 30vh;
   background-color: var(--box-bg-color);
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
@@ -51,4 +52,10 @@ main {
 .info-box p {
   color: var(--text-color);
   line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+.info-box {
+  max-width: 30vh;
+}
 }
