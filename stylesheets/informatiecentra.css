@@ -4,7 +4,7 @@ main {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding-top: 20px;
+  padding: 20px;
 }
 
 .info-container {
