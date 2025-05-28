@@ -18,7 +18,7 @@ main {
 }
 
 .info-box {
-  flex: 1 1 300px;
+  flex: 1 1;
   padding: 15px;
   border-radius: 8px;
   max-width: 45vh;
