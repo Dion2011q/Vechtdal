@@ -24,10 +24,10 @@ main {
 }
 
 .info-box {
-  flex: 1 1 30vh;
+  flex: 1 1 30vw;
   padding: 15px;
   border-radius: 8px;
-  max-width: 45vh;
+  max-width: 45vw;
   background-color: var(--box-bg-color);
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
@@ -63,6 +63,6 @@ main {
 
 @media (max-width: 800px) {
 .info-box {
-  max-width: 90vh;
+  max-width: 90vw;
 }
 }
