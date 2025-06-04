@@ -46,3 +46,154 @@
   .contact-info p {
     margin: 0.5rem 0;
   }
+
+  .contact-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-intro h1 {
+  color: var(--heading-color);
+  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+.contact-intro p {
+  color: var(--text-color);
+  font-size: 1.15rem;
+}
+
+.contact-form {
+  max-width: 480px;
+  margin: 0 auto 3rem auto;
+  background: var(--box-bg-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(36,100,201,0.08);
+  padding: 2rem 2rem 1.5rem 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1.5px solid #b3c6e0;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #fff;
+  color: var(--text-color);
+  transition: border-color 0.2s;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--link-color);
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: var(--link-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+  margin-top: 0.5rem;
+  box-shadow: 0 2px 6px rgba(36,100,201,0.07);
+}
+
+button[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+.contact-info {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.contact-info h2 {
+  color: var(--heading-color);
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-details p {
+  color: var(--text-color);
+  margin: 0.5rem 0;
+  font-size: 1.08rem;
+}
+
+.contact-details a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+  color: #005fa3;
+}
+
+@media (max-width: 600px) {
+  .contact-form {
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+  }
+}
+
+// ...existing code...
+
+.contact-box {
+  max-width: 420px;
+  margin: 0 auto 3rem auto;
+  background: var(--box-bg-color, #f8fafd);
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(36,100,201,0.10);
+  padding: 2rem 2rem 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1.5px solid #e0e7ef;
+}
+
+.contact-info {
+  margin-top: 0;
+  text-align: center;
+}
+
+.contact-details p {
+  color: var(--text-color);
+  margin: 0.5rem 0;
+  font-size: 1.08rem;
+}
+
+.contact-details a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+  color: #005fa3;
+}
+
+// ...existing code...
