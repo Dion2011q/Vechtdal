@@ -22,8 +22,23 @@ header {
   margin: 0;
 }
 
+#headerlogodiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#headerlogo {
+  height: 50px;
+  vertical-align: middle;
+  border-radius: 10px;
+}
+
 #headertitle {
     letter-spacing: 2px;
+    display: inline-block; /* Voeg deze regel toe */
+    margin-left: 10px;     /* Optioneel: ruimte tussen logo en titel */
+    vertical-align: middle;
 }
 
 .headertext {
