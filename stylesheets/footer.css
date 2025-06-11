@@ -6,6 +6,7 @@ footer {
   color: #fff;
   flex-direction: row;
   width: 100%;
+  margin-top: 24px;
 }
 
 .navbarfooter {
