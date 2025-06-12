@@ -1,12 +1,12 @@
 
 :root {
-  --bg-color: #ffffff;
+  --bg-color: #F5F5F5;
   --text-color: #000000;
   --header-bg: #2464c9;
   --footer-bg: #2464c9;
   --link-color: #2464c9;
   --heading-color: #1a1a1a;
-  --box-bg-color: rgb(239, 239, 239);
+  --box-bg-color: #eeeeee;
 }
 
 [data-theme="dark"] {
@@ -16,7 +16,7 @@
   --footer-bg: #1a1a1a;
   --link-color: #66a3ff;
   --heading-color: #ffffff;
-  --box-bg-color: #1e1e1e;
+  --box-bg-color: #262626;
 }
 
 html, body {

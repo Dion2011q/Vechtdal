@@ -4,12 +4,22 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
 }
 
 .info-container {
@@ -19,18 +29,23 @@ main {
   gap: 20px;
   margin: 20px auto;
   padding: 20px;
-  box-sizing: border-box;
   width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
 }
 
 .info-box {
-  flex: 1 1 30vw;
+  flex: 1 1 320px;
+  min-width: 280px;
+  max-width: 420px;
   padding: 15px;
   border-radius: 8px;
-  max-width: 45vw;
   background-color: var(--box-bg-color);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .info-box a {
@@ -40,7 +55,7 @@ main {
 
 .info-box:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
 }
 
 .info-box img {
@@ -54,15 +69,34 @@ main {
 .info-box h2 {
   color: var(--heading-color);
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .info-box p {
   color: var(--text-color);
   line-height: 1.6;
+  text-align: center;
 }
 
-@media (max-width: 800px) {
-.info-box {
-  max-width: 90vw;
+@media (max-width: 900px) {
+  .info-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 10px;
+  }
+  .info-box {
+    max-width: 95vw;
+    min-width: 0;
+    width: 100%;
+  }
 }
+
+@media (max-width: 600px) {
+  .info-box img {
+    height: 140px;
+  }
+  .info-box {
+    padding: 8px;
+  }
 }

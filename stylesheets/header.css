@@ -1,8 +1,9 @@
-
 header {
   background-color: #2464c9;
   color: #fff;
-  width: 100%;
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 .header-content {
@@ -10,10 +11,12 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  box-sizing: border-box;
 }
 
 .navbar {
   display: flex;
+  vertical-align: middle;
   flex-direction: row;
   list-style: none;
   text-decoration: none;
@@ -35,23 +38,58 @@ header {
 }
 
 #headertitle {
-    letter-spacing: 2px;
-    display: inline-block; /* Voeg deze regel toe */
-    margin-left: 10px;     /* Optioneel: ruimte tussen logo en titel */
-    vertical-align: middle;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
 }
 
 .headertext {
+  position: relative;
   color: white;
-  padding: 20px;
+  padding: 0 20px 8px 20px;
   text-align: center;
-  height: 20px;
   margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  background: none;
+  border: none;
+  box-shadow: none;
+  transition: color 0.25s cubic-bezier(.4,0,.2,1);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.headertext::after {
+  content: '';
+  display: block;
+  position: absolute;
+  text-underline-position: below;
+  left: 20%;
+  right: 20%;
+  bottom: 0; /* underline direct onder de tekst */
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #fff 0%, #eaf3fc 100%);
+  transform: scaleX(0);
+  transform-origin: middle;
+  transition: transform 0.35s cubic-bezier(.4,0,.2,1), background 0.3s;
+  z-index: 1;
+}
+
+.headertext:hover, .headertext:focus {
+  color: #eaf3fc;
+}
+
+.headertext:hover::after, .headertext:focus::after {
+  transform: scaleX(1);
+  background: linear-gradient(90deg, #eaf3fc 0%, #fff 100%);
 }
 
 header a {
   color: white;
   text-decoration: none;
+  vertical-align: middle;
 }
 
 .headertext:hover {
@@ -88,17 +126,45 @@ header a {
   position: relative;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1149px) {
   .dark-mode-toggle {
     margin-right: 15px;
     order: 2;
   }
   .hamburger {
     order: 3;
+    display: flex;
   }
   .header-content {
     align-items: center;
   }
+  #nav-menu {
+    display: none;
+    width: 100%;
+  }
+  #nav-menu.active {
+    display: block;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .headertext {
+    padding: 10px;
+    width: 100%;
+    vertical-align: middle;
+  }
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
 }
 
 .sun-moon-container {
@@ -172,42 +238,4 @@ header a {
 [data-theme="dark"] .dark-mode-toggle .moon {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
-}
-
-@media (max-width: 768px) {
-  .hamburger {
-    display: flex;
-  }
-
-  .hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-
-  .hamburger.active span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -7px);
-  }
-
-  #nav-menu {
-    display: none;
-    width: 100%;
-  }
-
-  #nav-menu.active {
-    display: block;
-  }
-
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0;
-  }
-
-  .headertext {
-    padding: 10px;
-    width: 100%;
-  }
 }
