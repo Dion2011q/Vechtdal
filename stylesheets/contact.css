@@ -30,6 +30,7 @@ body {
       text-align: center;
       max-width: 500px;
       width: 100%;
+      min-width: 200vh;
     }
     .contact-intro h1 {
       font-size: 2.2rem;
