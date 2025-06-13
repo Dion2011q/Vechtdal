@@ -28,6 +28,7 @@ footer a {
 .footertext {
   color: white;
   padding-right: 16px;
+  padding: 10px;
   text-decoration: none;
 }
 
