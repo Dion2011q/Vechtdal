@@ -36,7 +36,6 @@ footer a {
   color: lightgrey;
 }
 
-
 @media (max-width: 768px) {
   footer {
     display: flex;
@@ -45,25 +44,32 @@ footer a {
     background-color: #2464c9;
     color: #fff;
     flex-direction: column;
+    padding: 16px;
   }
 
   .navbarfooter {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     list-style: none;
     padding: 10px;
     text-decoration: none;
     color: white;
     text-align: center;
+    width: 100%;
   }
 
-.footertext {
+  .footertext {
     color: white;
-    padding: 0px;
+    padding: 10px 0;
     text-decoration: none;
     text-align: center;
     cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .footertext + .footertext {
+    margin-top: 10px;
   }
 }
-
