@@ -1,5 +1,8 @@
+// Plaats dit in je JS-bestand of in een <script> tag
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.getElementById('nav-menu');
 
-function toggleMenu() {
-  document.getElementById('nav-menu').classList.toggle('active');
-  document.querySelector('.hamburger').classList.toggle('active');
-}
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+  hamburger.classList.toggle('active');
+});
